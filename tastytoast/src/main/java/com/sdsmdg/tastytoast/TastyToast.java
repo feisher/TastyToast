@@ -33,12 +33,11 @@ public class TastyToast {
     static InfoToastView infoToastView;
     static DefaultToastView defaultToastView;
     static ConfusingToastView confusingToastView;
-
+     static Toast toast = null; //静态Toast的对象！2017年1月14日10:52:21 李鹏飞 修改
     public static Toast makeText(Context context, String msg, int length, int type) {
-
-        Toast toast = new Toast(context);
-
-
+        if (toast==null) {
+            toast= new Toast(context);
+        }
         switch (type) {
             case 1: {
                 View layout = LayoutInflater.from(context).inflate(R.layout.success_toast_layout, null, false);
