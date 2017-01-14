@@ -7,8 +7,8 @@ android {
     defaultConfig {
         minSdkVersion 11
         targetSdkVersion 25
-        versionCode 7
-        versionName "0.1.1"
+        versionCode 8
+        versionName "0.1.2"
     }
     buildTypes {
         release {
@@ -29,8 +29,8 @@ apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 
 version = "0.1.1"
-def siteUrl = 'https://github.com/yadav-rahul/TastyToast'    // project homepage
-def gitUrl = 'https://github.com/yadav-rahul/TastyToast.git' // project git
+def siteUrl = 'https://github.com/feisher/TastyToast'    // project homepage
+def gitUrl = 'https://github.com/feisher/TastyToast.git' // project git
 group = "com.sdsmdg.tastytoast"
 
 install {
